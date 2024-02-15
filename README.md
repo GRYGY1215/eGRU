@@ -1,5 +1,5 @@
 # eGRU
-Code of paper [A Novel Extreme Adaptive GRU for Multivariate Time Series Forecasting]
+Code of paper [A Novel Extreme Adaptive GRU for Multivariate Time Series Forecasting](https://www.nature.com/articles/s41598-024-53460-y)
 
 The Dozerformer achieve SOTA on nine benchmarks.
 
@@ -12,7 +12,7 @@ We conducted comprehensive experiments on four real-world benchmark datasets to 
 Additionally, we conducted ablation studies to demonstrate the consistently superior performance of eGRU in generating accurate forecasts while incorporating a diverse range of labeling results.
 
 ## Usage
-The eGRU cell and eGRU layer are implemented in PyTorch at ./models/eGRU/eGRU.py. Examples for eGRU cell and layer are presented as follows:
+The eGRU cell and eGRU layer are implemented in PyTorch at ./models/eGRU/eGRU.py. Examples of eGRU cell and layer are presented as follows:
    ```
    # eGRU cell Example
    input = torch.randn(6, 3, 10)
@@ -35,4 +35,18 @@ The eGRU cell and eGRU layer are implemented in PyTorch at ./models/eGRU/eGRU.py
    h0 = torch.randn(2, 6, 20)
    output, hidden_states, layers_out_nor, layers_out_ext = rnn(input)
    ```
-
+## Citation
+If you find this repository beneficial for your research, kindly include a citation:
+```
+@article{zhang2024novel,
+  title={A novel extreme adaptive GRU for multivariate time series forecasting},
+  author={Zhang, Yifan and Wu, Rui and Dascalu, Sergiu M and Harris Jr, Frederick C},
+  journal={Scientific Reports},
+  volume={14},
+  number={1},
+  pages={2991},
+  year={2024},
+  publisher={Nature Publishing Group UK London},
+  doi={https://doi.org/10.1038/s41598-024-53460-y}
+}
+```
